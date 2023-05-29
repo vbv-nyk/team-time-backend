@@ -1,0 +1,35 @@
+{
+  "name": "team-time-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index",
+  "type": "module",
+  "resolve": {
+    "extensions": [
+      ".js"
+    ]
+  },
+  "scripts": {
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vbv-nyk/team-time-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vbv-nyk/team-time-backend/issues"
+  },
+  "homepage": "https://github.com/vbv-nyk/team-time-backend#readme",
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.5",
+    "typescript": "^5.0.4"
+  }
+}
