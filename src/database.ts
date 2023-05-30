@@ -1,12 +1,10 @@
-const books = [
+const teams = [
   {
-    title: "The Awakening",
-    author: "Kate Chopin",
-  },
-  {
-    title: "City of Glass",
-    author: "Paul Auster",
+    name: "Team Time",
+    desc: "Building a platform to find teammates",
+    reqs: ["Front End Developer", "UI/UX designer", "Influencer", "Youtuber"],
+    id: 1,
   },
 ];
 
-export default books;
+export default teams;
