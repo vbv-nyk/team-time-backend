@@ -6,8 +6,8 @@ const config: CodegenConfig = {
     "./resolvers-types.ts": {
       config: {
         input: {
-          schemaSearchPaths: ["./src/**/*.graphql"], // Update the schemaSearchPaths pattern to include ./src
-          operationSearchPaths: ["./src/**/*.graphql"], // Update the operationSearchPaths pattern to include ./src
+          // schemaSearchPaths: ["./src/**/*.graphql"], // Update the schemaSearchPaths pattern to include ./src
+          // operationSearchPaths: ["./src/**/*.graphql"], // Update the operationSearchPaths pattern to include ./src
         },
         useIndexSignature: true,
       },
