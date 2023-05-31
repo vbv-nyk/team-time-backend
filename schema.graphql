@@ -1,0 +1,15 @@
+type Team {
+  name: String
+  desc: String
+  reqs: [String]
+  id: ID
+}
+
+type Query {
+  teams: [Team]
+  teamById(id: String): Team
+}
+
+type Mutation {
+  createTeam(name: String, desc: String, reqs: [String], id: ID): Team
+}
