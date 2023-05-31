@@ -11,5 +11,5 @@ type Query {
 }
 
 type Mutation {
-  createTeam(name: String, desc: String, reqs: [String], id: ID): Team
+  createTeam(name: String!, desc: String!, reqs: [String!]!, id: ID!): Team
 }

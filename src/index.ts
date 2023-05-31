@@ -3,7 +3,7 @@ import { startStandaloneServer } from "@apollo/server/standalone";
 import resolvers from "./resolvers.js";
 import { readFileSync } from "fs";
 
-const typeDefs = readFileSync("./schema.graphql", { encoding: "utf-8" });
+const typeDefs = readFileSync("./src/schema.graphql", { encoding: "utf-8" });
 
 // The ApolloServer constructor requires two parameters: your schema
 // definition and your set of resolvers.
