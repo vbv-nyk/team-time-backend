@@ -5,10 +5,16 @@ const resolvers = {
     Query: {
         teams: () => teams,
         teamById: (parent, args) => {
-            const id = args.id; // Extracting the 'id' argument from the 'args' object
+            const { id } = args; // Extracting the 'id' argument from the 'args' object
             // Retrieve the team with the specified id from the 'teams' array
             const team = teams.find((team) => team.id === id);
             return team;
+        },
+    },
+    Mutation: {
+        createTeam: (parent, args) => {
+            teams.push(args);
+            return args;
         },
     },
 };
